@@ -41,8 +41,9 @@ const FormComponent = () => {
       setErrorPassword("Password must be more than 8 character");
       setPasswordColor("red");
     }
-    if (confirmPassword === password && confirmPassword != " ") {
+    if (confirmPassword === password && confirmPassword != "") {
       setErrorConfirmPassword("");
+      setConfirmPasswordColor('green')
     } else {
       setErrorConfirmPassword("Password not match");
       setConfirmPasswordColor("red");
